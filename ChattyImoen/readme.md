@@ -35,6 +35,8 @@ If you want Imoen to have a consistent portrait through BGEE and SoD, you can us
 
 ## Installation
 
+Note: You will need to start a new game. The Imoen character files in any previously saved games will NOT be affected.
+
 ### Windows 
 If the mod was previously installed, uninstall it before extracting the new version. Chatty Imoen is packaged and installed with WeiDU. To install, extract the mod archive, then copy of the contents of the archive into your game folder (the folder which contains the chitin.key file). If properly extracted, you should have a "chattyimoen" folder and setup-chattyimoen.exe in your game folder. To install, simply double-click setup-chattyimoen.exe and follow the instructions on screen. 
 
