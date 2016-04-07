@@ -1,2 +1,10 @@
 
 package_mod.bat
+
+*.command
+
+*.zip
+
+setup-chattyimoen
+
+setup-chattyimoen.exe

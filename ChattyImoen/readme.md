@@ -36,14 +36,12 @@ If you want Imoen to have a consistent portrait through BGEE and SoD, you can us
 ## Installation
 
 ### Windows 
-Chatty Imoen is packaged and installed with WeiDU and is distributed as a self-extracting archive. To install, simply double-click the archive and follow the instructions on screen. 
+If the mod was previously installed, uninstall it before extracting the new version. Chatty Imoen is packaged and installed with WeiDU. To install, extract the mod archive, then copy of the contents of the archive into your game folder (the folder which contains the chitin.key file). If properly extracted, you should have a "chattyimoen" folder and setup-chattyimoen.exe in your game folder. To install, simply double-click setup-chattyimoen.exe and follow the instructions on screen. 
 
-Alternatively the files can be extracted from the archive using WinRAR. If properly extracted, you should have a "chattyimoen" folder and setup-chattyimoen.exe in your game folder (the folder which contains the CHITIN.KEY file). To install, simply double-click setup-chattyimoen.exe and follow the instructions on screen. 
-
-Please run setup-bg1npc in your game folder to reinstall, uninstall or otherwise change components. 
+Please run setup-chattyimoen.exe in your game folder to reinstall, uninstall or otherwise change components. 
 
 ### Mac OS X 
-If the mod was previously installed, uninstall it before extracting the new version. Chatty Imoen is packaged and installed with WeiDU. To install, extract the mod archive, then copy of the contents of the folder "OSX-chattyimoen-v1" into your game folder (the folder which contains the CHITIN.KEY file). If properly extracted, you should have a "chattyimoen" folder, setup-chattyimoen, and setup-chattyimoen.command in your game folder. To install, simply double-click setup-chattyimoen.command and follow the instructions on screen. 
+If the mod was previously installed, uninstall it before extracting the new version. Chatty Imoen is packaged and installed with WeiDU. To install, extract the mod archive, then copy of the contents of the folder "OSX-chattyimoen-v1" into your game folder (the folder which contains the chitin.key file). If properly extracted, you should have a "chattyimoen" folder, setup-chattyimoen, and setup-chattyimoen.command in your game folder. To install, simply double-click setup-chattyimoen.command and follow the instructions on screen. 
 
 
 ## Contact Information
@@ -56,4 +54,3 @@ Comments and bug reports can be directed to the Chatty Imoen thread in the [BGEE
 Version 1 - April 6, 2016
 
 - Initial upload
-
