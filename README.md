@@ -51,6 +51,20 @@ If the mod was previously installed, uninstall it before extracting the new vers
 Comments and bug reports can be directed to the Chatty Imoen thread in the [BGEE Mods forum at Beamdog](https://forums.beamdog.com/categories/bg%3Aee-mods).  If the thread is inaccessible, you can contact [AstroBryGuy](https://forums.beamdog.com/profile/AstroBryGuy) on the Beamdog forums.
 
 
+## Acknowledgements 
+
+To the Beamdog team - Thanks for giving us the Enhanced Editions and now Siege Of Dragonspear! I look forward to playing your next adventure.
+
+To the BG Modding community - you rock! Without you, we wouldn't have the tools to create mods or the examples you have set for other modders to follow. Thanks!
+
+Chatty Imoen is not developed, supported, or endorsed by Beamdog or Wizards of the Coast. 
+
+## License
+
+The .tp2 code ONLY is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
+
+All images, sounds, and game text used by this mod are copyright Beamdog or Wizards of the Coast.
+
 ## Version History
 
 Version 1 - April 6, 2016

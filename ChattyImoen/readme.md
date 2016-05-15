@@ -1,5 +1,5 @@
 # Chatty Imoen
-A BG:EE mod by AstroBryGuy
+A Baldur's Gate mod by AstroBryGuy
 
 
 ## Introduction
@@ -7,8 +7,12 @@ A BG:EE mod by AstroBryGuy
 In the original Baldur's Gate, Imoen was a late addition to the game. Unfortunately, this means that she has no banter dialogs or interactions with other NPCs. Her voice set was also cobbled together. This mod expands Imoen's voice set and adds interaction banters with other NPCs. It also has a component to change Imoen's portrait to one of three choices: BG1, SoD, or BG2.
 
 
-## Components
+## Compatibility
 
+Chatty Imoen is compatible with BG1 (with or without TotSC), Tutu, and BG:EE.
+
+
+## Components
 
 ### Chatty Imoen: Expanded Character Sounds
 
@@ -16,13 +20,11 @@ This components expands Imoen's character sounds using lines from BG2 and the BG
 
 If you have kicked Imoen out of the party, she gets a voiced line when you start a conversation with her to rejoin the party.
 
-
 ### Chatty Imoen: Add NPC Interactions
 
 This component adds Imoen to the INTERACT.2DA file, which controls the "non-dialog" banters that BG1 NPCs have. This component requires the Expanded Character Sounds component, otherwise Imoen will have nothing to say.
 
 Also, this component gives Imoen a specific reaction to Garrick's death (no other NPC does).
-
 
 ### Chatty Imoen: Imoen Portrait Replacements
 
@@ -52,6 +54,10 @@ Comments and bug reports can be directed to the Chatty Imoen thread in the [BGEE
 
 
 ## Version History
+
+Version 1.1 - May 14, 2016
+* Added Italian translation - Thanks @Aedan!
+* Added compatibility with BG1, TotSC, and Tutu.
 
 Version 1 - April 6, 2016
 
