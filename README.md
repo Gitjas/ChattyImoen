@@ -1,5 +1,5 @@
 # Chatty Imoen
-A BG:EE mod by AstroBryGuy
+A Baldur's Gate mod by AstroBryGuy
 
 
 ## Introduction
@@ -7,8 +7,12 @@ A BG:EE mod by AstroBryGuy
 In the original Baldur's Gate, Imoen was a late addition to the game. Unfortunately, this means that she has no banter dialogs or interactions with other NPCs. Her voice set was also cobbled together. This mod expands Imoen's voice set and adds interaction banters with other NPCs. It also has a component to change Imoen's portrait to one of three choices: BG1, SoD, or BG2.
 
 
-## Components
+## Compatibility
 
+Chatty Imoen is compatible with BG1 (with or without TotSC), Tutu, and BG:EE.
+
+
+## Components
 
 ### Chatty Imoen: Expanded Character Sounds
 
@@ -16,13 +20,11 @@ This components expands Imoen's character sounds using lines from BG2 and the BG
 
 If you have kicked Imoen out of the party, she gets a voiced line when you start a conversation with her to rejoin the party.
 
-
 ### Chatty Imoen: Add NPC Interactions
 
 This component adds Imoen to the INTERACT.2DA file, which controls the "non-dialog" banters that BG1 NPCs have. This component requires the Expanded Character Sounds component, otherwise Imoen will have nothing to say.
 
 Also, this component gives Imoen a specific reaction to Garrick's death (no other NPC does).
-
 
 ### Chatty Imoen: Imoen Portrait Replacements
 
@@ -51,23 +53,12 @@ If the mod was previously installed, uninstall it before extracting the new vers
 Comments and bug reports can be directed to the Chatty Imoen thread in the [BGEE Mods forum at Beamdog](https://forums.beamdog.com/categories/bg%3Aee-mods).  If the thread is inaccessible, you can contact [AstroBryGuy](https://forums.beamdog.com/profile/AstroBryGuy) on the Beamdog forums.
 
 
-## Acknowledgements 
-
-To the Beamdog team - Thanks for giving us the Enhanced Editions and now Siege Of Dragonspear! I look forward to playing your next adventure.
-
-To the BG Modding community - you rock! Without you, we wouldn't have the tools to create mods or the examples you have set for other modders to follow. Thanks!
-
-Chatty Imoen is not developed, supported, or endorsed by Beamdog or Wizards of the Coast. 
-
-## License
-
-The .tp2 code ONLY is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
-
-All images, sounds, and game text used by this mod are copyright Beamdog or Wizards of the Coast.
-
 ## Version History
+
+Version 1.1 - May 14, 2016
+* Added Italian translation - Thanks @Aedan!
+* Added compatibility with BG1, TotSC, and Tutu.
 
 Version 1 - April 6, 2016
 
 - Initial upload
-
