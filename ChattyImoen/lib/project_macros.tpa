@@ -47,7 +47,6 @@ DEFINE_PATCH_MACRO ~source_cre_sound_cleanup~ BEGIN
          WRITE_LONG HIDDEN_IN_SHADOWS (BNOT 0x0)
          WRITE_LONG SPELL_DISRUPTED (BNOT 0x0)
          WRITE_LONG SET_A_TRAP (BNOT 0x0)
-         WRITE_LONG BIO (BNOT 0x0)
 END
 
 DEFINE_PATCH_MACRO ~source_cre_script_cleanup~ BEGIN
