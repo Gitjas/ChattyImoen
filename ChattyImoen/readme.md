@@ -55,6 +55,9 @@ Comments and bug reports can be directed to the Chatty Imoen thread in the [BGEE
 
 ## Version History
 
+Version 1.2 - May 30, 2016
+* Fixed issue with blanking Imoen's biography
+
 Version 1.1 - May 14, 2016
 * Added Italian translation - Thanks @Aedan!
 * Added compatibility with BG1, TotSC, and Tutu.
