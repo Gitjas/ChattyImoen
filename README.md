@@ -37,6 +37,8 @@ If you want Imoen to have a consistent portrait through BGEE and SoD, you can us
 
 ## Installation
 
+*Note for Steam/GOG users:* Before installing any mods, you will need to use the [ModMerge](https://forums.beamdog.com/discussion/50441/modmerge-merge-your-steam-gog-zip-based-dlc-into-something-weidu-nearinfinity-dltcep-can-use/p1) utility to make your game moddable.
+
 Note: You will need to start a new game. The Imoen character files in any previously saved games will NOT be affected.
 
 ### Windows 
