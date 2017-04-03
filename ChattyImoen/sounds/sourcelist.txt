@@ -1,0 +1,20 @@
+List of BG2 sources for each of the added character sounds.
+
+AY#IMNA1.WAV: BG2 - IMOEN33.WAV // #11038 = "Gotcha"
+AY#IMNA2.WAV: BG2 - IMOEN38.WAV // #11042 = "You can count on me"
+AY#IMNA3.WAV: BG2 - IMOEN37.WAV // #11043 = "No problem at all"
+AY#IMNA6.WAV: BG2 - IMOEN36.WAV // #4336 = "Alright! Alright!"
+AY#IMNB2.WAV: BG2 - IMOEN16.WAV // #30762 = "I'll show you a fight!"
+AY#IMNBR.WAV: BG2 - TTIMOE96.WAV (trimmed) // #39324 = "What's taking you so long?" (1st sentence)
+AY#IMNC1.WAV: BG2 - TTIMOE97.WAV (trimmed) // #39325 = "Good job." (1st sentence)
+AY#IMNDN.WAV: BG2 - TTIMOE99.WAV (trimmed) // #39489 = "There could be traps down here." (1st sentence)
+AY#IMNHR.WAV: BG2 - TTIMOEA2.WAV (trimmed) // #39492 = "I'm kinda wounded." (1st sentence)
+AY#IMNLD.WAV: BG2 - IMOEN08.WAV // #4337 = "Aww, come on. I'm not cut out for the leadership stuff."
+AY#IMNPP.WAV: BG2 - IMOEN46.WAV // #30750 = "Easy as pie"
+AY#IMNR1.WAV: BG2 - TTIMOE98.WAV // #39330 = "Alright!" (1st sentence); Alternative TTIMOE93.WAV (trimmed) #39313
+AY#IMNR2.WAV: BG2 - IMOEN35.WAV // #4335 = "Right you are."
+AY#IMNS3.WAV: BG2 - IMOEN29.WAV // #11044 = "Name it."
+AY#IMNS4.WAV: BG2 - IMOEN34.WAV // #11039 = "Good to go."
+AY#IMNS5.WAV: BG2 - IMOEN31.WAV // #30739 = "Somethin' up?"
+AY#IMNS6.WAV: BG2 - TTIMOE94.WAV (trimmed) // #39320 = "Hurry up!" (2nd sentence)
+AY#IMNSP.WAV: BG2 - TTIMOE90.WAV (trimmed) // #39305 = "Heya! How are things going?" (1st sentence)

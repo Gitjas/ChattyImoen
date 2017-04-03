@@ -1,0 +1,81 @@
+// BGEE 4341
+@100   = ~[IMOEN 15] ~ [IMOEN15]
+// BGEE 4335
+@101   = ~[IMOEN 7] ~ [IMOEN07]
+// BGEE 11042
+@102   = ~[IMOEN 27] ~ [IMOEN27]
+// BGEE 4338
+@103   = ~[IMOEN 10] ~ [IMOEN10]
+// BGEE 11039
+@104   = ~[IMOEN 17] ~ [IMOEN17]
+// BGEE 11037
+@105   = ~[IMOEN 25] ~ [IMOEN25]
+// BG2 4337
+@106   = ~[AY#IMNLD] ~ [AY#IMNLD]
+// BGEE 4339
+@107   = ~[IMOEN 11] ~ [IMOEN11]
+// BG2 39324 (beginning)
+@108   = ~[AY#IMNBR] ~ [AY#IMNBR]
+// BGEE 11035
+@109   = ~[IMOEN 18] ~ [IMOEN18]
+// BG2 30762
+@110   = ~[AY#IMNB2] ~ [AY#IMNB2]
+// BGEE 5395
+@111   = ~[IMOEN 12] ~ [IMOEN12]
+// BGEE 5396
+@112   = ~[IMOEN 13] ~ [IMOEN13]
+// BG2 39492 (beginning)
+@113   = ~[AY#IMNHR] ~ [AY#IMNHR]
+// BG2 39489 (beginning)
+@114   = ~[AY#IMNDN] ~ [AY#IMNDN]
+// BGEE 11036
+@115   = ~[IMOEN 19] ~ [IMOEN19]
+// BGEE 4331
+@116   = ~[IMOEN 3] ~ [IMOEN03]
+// BGEE 4332
+@117   = ~[IMOEN 4] ~ [IMOEN04]
+// BG2 11044
+@118   = ~[AY#IMNS3] ~ [AY#IMNS3]
+// BG2 11039
+@119   = ~[AY#IMNS4] ~ [AY#IMNS4]
+// BG2 30739
+@120   = ~[AY#IMNS5] ~ [AY#IMNS5]
+// BG2 39320 (2nd sentence)
+@121   = ~[AY#IMNS6] ~ [AY#IMNS6]
+// BG2 11038
+@124   = ~[AY#IMNA1] ~ [AY#IMNA1]
+// BG2 11042
+@125   = ~[AY#IMNA2] ~ [AY#IMNA2]
+// BG2 11043
+@126   = ~[AY#IMNA3] ~ [AY#IMNA3]
+// BGEE 4333
+@127   = ~[IMOEN 5] ~ [IMOEN05]
+// BGEE 4334
+@128   = ~[IMOEN 6] ~ [IMOEN06]
+// BG2 4336
+@129   = ~[AY#IMNA6] ~ [AY#IMNA6]
+// BGEE 11043
+@130   = ~[IMOEN 28] ~ [IMOEN28]
+// BG2 39325 (beginning)
+@131   = ~[AY#IMNC1] ~ [AY#IMNC1]
+// BG2 39305 (beginning)
+@132   = ~[AY#IMNSP] ~ [AY#IMNSP]
+// BGEE 4336
+@133   = ~[IMOEN 8] ~ [IMOEN08]
+// BGEE 11045
+@134   = ~[IMOEN 30] ~ [IMOEN30]
+// BGEE 11041
+@135   = ~[IMOEN 26] ~ [IMOEN26]
+// BGEE 4337
+@136   = ~[IMOEN 9] ~ [IMOEN09]
+// BG2 39330 (beginning)
+@137   = ~[AY#IMNR1] ~ [AY#IMNR1]
+// BG2 4335
+@138   = ~[AY#IMNR2] ~ [AY#IMNR2]
+// BGEE 4340
+@139   = ~[IMOEN 14] ~ [IMOEN14]
+// BGEE 11038
+@140   = ~[IMOEN 24] ~ [IMOEN24]
+// BG2 30750
+@141   = ~[AY#IMNPP] ~ [AY#IMNPP]
+

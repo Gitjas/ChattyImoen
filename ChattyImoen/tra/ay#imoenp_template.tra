@@ -1,0 +1,6 @@
+// Original line BGEE 16412 - altered beginning to match IMOEN23.WAV 
+@0    = ~Good to see you rum-dukes again! I knew you'd be back! Let's get back to traveling the good road, eh?~ [IMOEN23]
+
+// For languages with a voiceover, IMOEN23.WAV is usually not dubbed, since it was unused in BG1. 
+// In that case, uncomment this line and replace the text with BGEE string reference #16412:
+// @0 = ~You old rumjake fool! I knew you'd be back! Let's get back to traveling the good road, eh?~
