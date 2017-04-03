@@ -1,0 +1,80 @@
+// BGEE 4341
+@100   = ~[IMOEN 15] Hey! Ich bin's, Imoen.~ [IMOEN15]
+// BGEE 4335
+@101   = ~[IMOEN 7] Denn ich verschwinde jetzt.~ [IMOEN07]
+// BGEE 11042
+@102   = ~[IMOEN 27] Schön für Euch, wenn Ihr's schafft, uns zu retten.~ [IMOEN27]
+// BGEE 4338
+@103   = ~[IMOEN 10] Blöd, bäh, krach, beng, bumm!~ [IMOEN10]
+// BGEE 11039
+@104   = ~[IMOEN 17] Ich hab genug davon.~ [IMOEN17]
+// BGEE 11037
+@105   = ~[IMOEN 25] Ich möchte hier lebendig rauskommen.~ [IMOEN25]
+// BG2 4337
+@106   = ~[AY#IMNLD] Ohhh, echt nicht. Ich bin für diesen Führungskram nicht geschaffen.~ [AY#IMNLD]
+// BGEE 4339
+@107   = ~[IMOEN 11] (gähn) Ich werde ein bisschen müde.~ [IMOEN11]
+// BG2 39324 (beginning)
+@108   = ~[AY#IMNBR] Warum dauert das so lange?~ [AY#IMNBR]
+// BGEE 11035
+@109   = ~[IMOEN 18] Meine Klinge wird Euch zurechtstutzen!~ [IMOEN18]
+// BG2 30762
+@110   = ~[AY#IMNB2] Ihr woltl kämpfen?! Ich zeig Euch einen richtigen Kampf!~ [AY#IMNB2]
+// BGEE 5395
+@111   = ~[IMOEN 12] ~ [IMOEN12]
+// BGEE 5396
+@112   = ~[IMOEN 13] ~ [IMOEN13]
+// BG2 39492 (beginning)
+@113   = ~[AY#IMNHR] Ich bin etwas verwundet.~ [AY#IMNHR]
+// BG2 39489 (beginning)
+@114   = ~[AY#IMNDN] Hier unten könnten sich Fallen befinden.~ [AY#IMNDN]
+// BGEE 11036
+@115   = ~[IMOEN 19] Etwas Unnatürliches geht hier vor, und ich möchte nicht daran teilhaben.~ [IMOEN19]
+// BGEE 4331
+@116   = ~[IMOEN 3] Ja?~ [IMOEN03]
+// BGEE 4332
+@117   = ~[IMOEN 4] Was wollt Ihr?~ [IMOEN04]
+// BG2 11044
+@118   = ~[AY#IMNS3] Ich verschwinde.~ [AY#IMNS3]
+// BG2 11039
+@119   = ~[AY#IMNS4] Schön.~ [AY#IMNS4]
+// BG2 30739
+@120   = ~[AY#IMNS5] Is was los?~ [AY#IMNS5]
+// BG2 39320 (2nd sentence)
+@121   = ~[AY#IMNS6] Beeilt Euch!~ [AY#IMNS6]
+// BG2 11038
+@124   = ~[AY#IMNA1] Verstanden.~ [AY#IMNA1]
+// BG2 11042
+@125   = ~[AY#IMNA2] Ihr könnt Euch auf mich verlassen.~ [AY#IMNA2]
+// BG2 11043
+@126   = ~[AY#IMNA3] Kein Problem.~ [AY#IMNA3]
+// BGEE 4333
+@127   = ~[IMOEN 5] Gääähhhn.~ [IMOEN05]
+// BGEE 4334
+@128   = ~[IMOEN 6] Du bist ja 'n komischer Kauz.~ [IMOEN06]
+// BG2 4336
+@129   = ~[AY#IMNA6] Okay, okay.~ [AY#IMNA6]
+// BGEE 11043
+@130   = ~[IMOEN 28] Ich kann Euch nicht mehr sagen. Lasst mich gehen.~ [IMOEN28]
+// BG2 39325 (beginning)
+@131   = ~[AY#IMNC1] Gute Arbeit!~ [AY#IMNC1]
+// BG2 39305 (beginning)
+@132   = ~[AY#IMNSP] Hi! Wie geht es Euch?~ [AY#IMNSP]
+// BGEE 4336
+@133   = ~[IMOEN 8] Erzählst du mir die Geschichte vom Wolf und den sieben Geißlein? Och, bitte!~ [IMOEN08]
+// BGEE 11045
+@134   = ~[IMOEN 30] Puff-Guts hat mir zu Hause immer 'ne Geschichte erzählt.~ [IMOEN30]
+// BGEE 11041
+@135   = ~[IMOEN 26] Mich kümmert's nicht.~ [IMOEN26]
+// BGEE 4337
+@136   = ~[IMOEN 9] Du bist ja doof.~ [IMOEN09]
+// BG2 39313 (beginning)
+@137   = ~[AY#IMNR1] Sehr gut!~ [AY#IMNR1]
+// BG2 4335
+@138   = ~[AY#IMNR2] Geht klar.~ [AY#IMNR2]
+// BGEE 4340
+@139   = ~[IMOEN 14] Armes Schwein, beißt schon so früh ins Gras.~ [IMOEN14]
+// BGEE 11038
+@140   = ~[IMOEN 24] Hier lang.~ [IMOEN24]
+// BG2 30750
+@141   = ~[AY#IMNPP] Echt einfach.~ [AY#IMNPP]
