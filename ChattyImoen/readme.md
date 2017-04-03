@@ -37,7 +37,7 @@ If you want Imoen to have a consistent portrait through BGEE and SoD, you can us
 
 ## Installation
 
-*Note for Steam/GOG users:* Before installing any mods, you will need to use the (ModMerge)[https://forums.beamdog.com/discussion/50441/modmerge-merge-your-steam-gog-zip-based-dlc-into-something-weidu-nearinfinity-dltcep-can-use/p1] utility to make your game moddable.
+*Note for Steam/GOG users:* Before installing any mods, you will need to use the [ModMerge](https://forums.beamdog.com/discussion/50441/modmerge-merge-your-steam-gog-zip-based-dlc-into-something-weidu-nearinfinity-dltcep-can-use/p1) utility to make your game moddable.
 
 Note: You will need to start a new game. The Imoen character files in any previously saved games will NOT be affected.
 
@@ -57,12 +57,16 @@ Comments and bug reports can be directed to the Chatty Imoen thread in the [BGEE
 
 ## Version History
 
+Version 1.3 - April 2, 2017
+- Added French and German translations
+- Added .tra template and sourcefile list for expanded character sounds
+
 Version 1.2 - May 30, 2016
-* Fixed issue with blanking Imoen's biography
+- Fixed issue with blanking Imoen's biography
 
 Version 1.1 - May 14, 2016
-* Added Italian translation - Thanks @Aedan!
-* Added compatibility with BG1, TotSC, and Tutu.
+- Added Italian translation - Thanks @Aedan!
+- Added compatibility with BG1, TotSC, and Tutu.
 
 Version 1 - April 6, 2016
 

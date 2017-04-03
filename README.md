@@ -57,12 +57,16 @@ Comments and bug reports can be directed to the Chatty Imoen thread in the [BGEE
 
 ## Version History
 
+Version 1.3 - April 2, 2017
+- Added French and German translations
+- Added .tra template and sourcefile list for expanded character sounds
+
 Version 1.2 - May 30, 2016
-* Fixed issue with blanking Imoen's biography
+- Fixed issue with blanking Imoen's biography
 
 Version 1.1 - May 14, 2016
-* Added Italian translation - Thanks @Aedan!
-* Added compatibility with BG1, TotSC, and Tutu.
+- Added Italian translation - Thanks @Aedan!
+- Added compatibility with BG1, TotSC, and Tutu.
 
 Version 1 - April 6, 2016
 
