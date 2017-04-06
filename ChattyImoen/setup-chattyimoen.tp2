@@ -67,10 +67,14 @@ LANGUAGE ~Deutsch~
 	~german~
 	~chattyimoen/tra/german/setup.tra~
 	~chattyimoen/tra/german/chattyimoen.tra~
-LANGUAGE ~Italian (subtitles only; English voiceover)~ 
+LANGUAGE ~Italiano (Sottotitoli solo; voce fuori campo in lingua inglese)~ 
 	~italian~ 
 	~chattyimoen/tra/italian/setup.tra~
 	~chattyimoen/tra/italian/chattyimoen.tra~
+LANGUAGE ~Polski~
+	~polish~
+	~chattyimoen/tra/polish/setup.tra~
+	~chattyimoen/tra/polish/chattyimoen.tra~
 
 BEGIN @0 DESIGNATED 0 /* Chatty Imoen: Expanded Character Sounds */
   REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgee~ @1 /* You must have BG1, TotSC, Tutu, or BGEE installed. */
