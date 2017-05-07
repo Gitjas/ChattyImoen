@@ -14,7 +14,7 @@ AUTHOR ~AstroBryGuy~
 
 VERSION ~v1.3~
 
-README ~chattyimoen/readme.md~
+README ~chattyimoen/readme.html~
 
 ALWAYS
 	INCLUDE ~chattyimoen/lib/project_macros.tpa~   /* adds macros callable by each component */
