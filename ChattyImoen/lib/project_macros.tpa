@@ -395,4 +395,16 @@ DEFINE_PATCH_MACRO ~remove_blank_lines~ BEGIN
 END
 //__________________________________________________________________________________
 
+DEFINE_ACTION_MACRO ~change_imoen_portrait~ BEGIN
+	ACTION_FOR_EACH imoen IN "%tutu_var%imoen" "%tutu_var%imoen1" "%tutu_var%imoen2" "%tutu_var%imoen4" "%tutu_imoen6%" bdimoen bdimoedo csimoen dream1 drim01 drim02 imoen10 imoen15 imoen211 imoen213 imoen6 imoendrm ppdrimo ppdrimov ppimoen ttimoen BEGIN
+		ACTION_IF FILE_EXISTS_IN_GAME "%imoen%.cre" BEGIN
+			COPY_EXISTING ~%imoen%.CRE~ ~override~
+      			PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN // protects against invalid files
+        			WRITE_ASCIIE 0x34 ~%imoen_port_sm%~ #8 // small portrait
+        			WRITE_ASCIIE 0x3c ~%imoen_port_lg%~ #8 // large portrait
+        		END
+        	BUT_ONLY
+    	END
+	END
+END
 
