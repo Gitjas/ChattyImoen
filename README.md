@@ -1,6 +1,7 @@
 # Chatty Imoen
 A Baldur's Gate mod by AstroBryGuy
 
+*Version 1.3*
 
 ## Introduction
 
@@ -9,7 +10,7 @@ In the original Baldur's Gate, Imoen was a late addition to the game. Unfortunat
 
 ## Compatibility
 
-Chatty Imoen is compatible with BG1 (with or without TotSC), Tutu, and BG:EE.
+Chatty Imoen is compatible with BG1 (with or without TotSC), Tutu, BGT, BG:EE, and EET.
 
 
 ## Components
@@ -57,9 +58,10 @@ Comments and bug reports can be directed to the Chatty Imoen thread in the [BGEE
 
 ## Version History
 
-Version 1.3 - April 2, 2017
+Version 1.3 - May 6, 2017
 - Added French and German translations
 - Added .tra template and sourcefile list for expanded character sounds
+- Added BGT and EET compatibility
 
 Version 1.2 - May 30, 2016
 - Fixed issue with blanking Imoen's biography
