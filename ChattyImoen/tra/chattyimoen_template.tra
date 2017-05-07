@@ -1,39 +1,39 @@
 // BGEE 4341
-@100   = ~[IMOEN 15] ~ [IMOEN15]
+@100   = ~[IMOEN 15] ~ [%tutubgt_prefix%IMOEN15%eet_var%]
 // BGEE 4335
-@101   = ~[IMOEN 7] ~ [IMOEN07]
+@101   = ~[IMOEN 7] ~ [%tutubgt_prefix%IMOEN07%eet_var%]
 // BGEE 11042
-@102   = ~[IMOEN 27] ~ [IMOEN27]
+@102   = ~[IMOEN 27] ~ [%tutubgt_prefix%IMOEN27%eet_var%]
 // BGEE 4338
-@103   = ~[IMOEN 10] ~ [IMOEN10]
+@103   = ~[IMOEN 10] ~ [%tutubgt_prefix%IMOEN10%eet_var%]
 // BGEE 11039
-@104   = ~[IMOEN 17] ~ [IMOEN17]
+@104   = ~[IMOEN 17] ~ [%tutubgt_prefix%IMOEN17%eet_var%]
 // BGEE 11037
-@105   = ~[IMOEN 25] ~ [IMOEN25]
+@105   = ~[IMOEN 25] ~ [%tutubgt_prefix%IMOEN25%eet_var%]
 // BG2 4337
 @106   = ~[AY#IMNLD] ~ [AY#IMNLD]
 // BGEE 4339
-@107   = ~[IMOEN 11] ~ [IMOEN11]
+@107   = ~[IMOEN 11] ~ [%tutubgt_prefix%IMOEN11%eet_var%]
 // BG2 39324 (beginning)
 @108   = ~[AY#IMNBR] ~ [AY#IMNBR]
 // BGEE 11035
-@109   = ~[IMOEN 18] ~ [IMOEN18]
+@109   = ~[IMOEN 18] ~ [%tutubgt_prefix%IMOEN18%eet_var%]
 // BG2 30762
 @110   = ~[AY#IMNB2] ~ [AY#IMNB2]
 // BGEE 5395
-@111   = ~[IMOEN 12] ~ [IMOEN12]
+@111   = ~[IMOEN 12] ~ [%tutubgt_prefix%IMOEN12%eet_var%]
 // BGEE 5396
-@112   = ~[IMOEN 13] ~ [IMOEN13]
+@112   = ~[IMOEN 13] ~ [%tutubgt_prefix%IMOEN13%eet_var%]
 // BG2 39492 (beginning)
 @113   = ~[AY#IMNHR] ~ [AY#IMNHR]
 // BG2 39489 (beginning)
 @114   = ~[AY#IMNDN] ~ [AY#IMNDN]
 // BGEE 11036
-@115   = ~[IMOEN 19] ~ [IMOEN19]
+@115   = ~[IMOEN 19] ~ [%tutubgt_prefix%IMOEN19%eet_var%]
 // BGEE 4331
-@116   = ~[IMOEN 3] ~ [IMOEN03]
+@116   = ~[IMOEN 3] ~ [%tutubgt_prefix%IMOEN03%eet_var%]
 // BGEE 4332
-@117   = ~[IMOEN 4] ~ [IMOEN04]
+@117   = ~[IMOEN 4] ~ [%tutubgt_prefix%IMOEN04%eet_var%]
 // BG2 11044
 @118   = ~[AY#IMNS3] ~ [AY#IMNS3]
 // BG2 11039
@@ -49,33 +49,33 @@
 // BG2 11043
 @126   = ~[AY#IMNA3] ~ [AY#IMNA3]
 // BGEE 4333
-@127   = ~[IMOEN 5] ~ [IMOEN05]
+@127   = ~[IMOEN 5] ~ [%tutubgt_prefix%IMOEN05%eet_var%]
 // BGEE 4334
-@128   = ~[IMOEN 6] ~ [IMOEN06]
+@128   = ~[IMOEN 6] ~ [%tutubgt_prefix%IMOEN06%eet_var%]
 // BG2 4336
 @129   = ~[AY#IMNA6] ~ [AY#IMNA6]
 // BGEE 11043
-@130   = ~[IMOEN 28] ~ [IMOEN28]
+@130   = ~[IMOEN 28] ~ [%tutubgt_prefix%IMOEN28%eet_var%]
 // BG2 39325 (beginning)
 @131   = ~[AY#IMNC1] ~ [AY#IMNC1]
 // BG2 39305 (beginning)
 @132   = ~[AY#IMNSP] ~ [AY#IMNSP]
 // BGEE 4336
-@133   = ~[IMOEN 8] ~ [IMOEN08]
+@133   = ~[IMOEN 8] ~ [%tutubgt_prefix%IMOEN08%eet_var%]
 // BGEE 11045
-@134   = ~[IMOEN 30] ~ [IMOEN30]
+@134   = ~[IMOEN 30] ~ [%tutubgt_prefix%IMOEN30%eet_var%]
 // BGEE 11041
-@135   = ~[IMOEN 26] ~ [IMOEN26]
+@135   = ~[IMOEN 26] ~ [%tutubgt_prefix%IMOEN26%eet_var%]
 // BGEE 4337
-@136   = ~[IMOEN 9] ~ [IMOEN09]
+@136   = ~[IMOEN 9] ~ [%tutubgt_prefix%IMOEN09%eet_var%]
 // BG2 39330 (beginning)
 @137   = ~[AY#IMNR1] ~ [AY#IMNR1]
 // BG2 4335
 @138   = ~[AY#IMNR2] ~ [AY#IMNR2]
 // BGEE 4340
-@139   = ~[IMOEN 14] ~ [IMOEN14]
+@139   = ~[IMOEN 14] ~ [%tutubgt_prefix%IMOEN14%eet_var%]
 // BGEE 11038
-@140   = ~[IMOEN 24] ~ [IMOEN24]
+@140   = ~[IMOEN 24] ~ [%tutubgt_prefix%IMOEN24%eet_var%]
 // BG2 30750
 @141   = ~[AY#IMNPP] ~ [AY#IMNPP]
 
