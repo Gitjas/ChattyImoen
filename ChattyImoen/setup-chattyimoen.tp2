@@ -23,16 +23,21 @@ ALWAYS
 	/* adds custom IsValidForPartyDialogue state */
 	APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
 
-	/* Tutu_var */
-	ACTION_IF (GAME_IS ~tutu tutu_totsc~) THEN BEGIN
-		OUTER_SPRINT tutu_var "_"
-	END ELSE BEGIN
-		OUTER_SPRINT tutu_var ""
+	/* CPMVars */
+	ACTION_IF GAME_IS ~bg1 totsc~ THEN BEGIN
+		INCLUDE ~chattyimoen/lib/g3_bg_cpmvars.tpa~
+	END ELSE ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+		INCLUDE ~chattyimoen/lib/g3_bgee_cpmvars.tpa~
+	END ELSE ACTION_IF GAME_IS ~tutu tutu_totsc~ THEN BEGIN
+		INCLUDE ~chattyimoen/lib/g3_tutu_cpmvars.tpa~
+	END ELSE ACTION_IF GAME_IS ~bgt~ THEN BEGIN
+		INCLUDE ~chattyimoen/lib/g3_bgt_cpmvars.tpa~
+	END ELSE ACTION_IF GAME_IS ~eet~ THEN BEGIN
+		INCLUDE ~chattyimoen/lib/eet_cpmvars.tpa~
 	END
 
-
 	/* Portrait size variables */
-	ACTION_IF (GAME_IS ~bgee~) THEN BEGIN
+	ACTION_IF (GAME_IS ~bgee eet~) THEN BEGIN
 		OUTER_SPRINT sm "m"
 		OUTER_SPRINT lg "l"
 	END ELSE BEGIN
@@ -77,7 +82,7 @@ LANGUAGE ~Polski~
 	~chattyimoen/tra/polish/chattyimoen.tra~
 
 BEGIN @0 DESIGNATED 0 /* Chatty Imoen: Expanded Character Sounds */
-  REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgee~ @1 /* You must have BG1, TotSC, Tutu, or BGEE installed. */
+  REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee eet~ @1 /* You must have BG1, TotSC, Tutu, BGT, BGEE, or EET installed. */
 
 ACTION_IF DIRECTORY_EXISTS ~chattyimoen/sounds/%LANGUAGE%~ THEN BEGIN
         COPY ~chattyimoen/sounds/%LANGUAGE%~ ~override~
@@ -85,7 +90,7 @@ END ELSE BEGIN
 	COPY ~chattyimoen/sounds/english~ ~override~
 END
 
-ACTION_FOR_EACH imoen IN imoen imoen1 imoen2 imoen4 imoen6 _imoen _imoen1 _imoen2 _imoen4 _imoen6 BEGIN
+ACTION_FOR_EACH imoen IN "%tutu_var%imoen" "%tutu_var%imoen1" "%tutu_var%imoen2" "%tutu_var%imoen4" "%tutu_imoen6%" BEGIN
 	ACTION_IF FILE_EXISTS_IN_GAME "%imoen%.cre" BEGIN
 		COPY_EXISTING ~%imoen%.cre~ ~override~
 			LAUNCH_PATCH_MACRO ~source_cre_sound_cleanup~
@@ -140,7 +145,7 @@ COMPILE EVALUATE_BUFFER ~chattyimoen/dlg/ay#imoenp.d~
 
 
 BEGIN @2 /* Chatty Imoen:  Add NPC Interactions */
-	REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgee~ @1 /* You must have BG1, TotSC, Tutu, or BGEE installed. */
+	REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee eet~ @1 /* You must have BG1, TotSC, Tutu, BGT, BGEE, or EET installed. */
 	REQUIRE_COMPONENT ~setup-chattyimoen.tp2~ ~0~ @3 // ~Chatty Imoen: Expanded Character Sounds component required~
 
 // Imoen gets specific death reaction for Garrick (no one else does)
@@ -149,7 +154,7 @@ COPY_EXISTING ~death.2da~ ~override/death.2da~
     COUNT_2DA_ROWS %cnt_col% "cnt_row"
 	FOR ( cnt=0; cnt<"%cnt_row%"; cnt=cnt+1 ) BEGIN
     	READ_2DA_ENTRY "%cnt%" 0 "%cnt_col%" "npc_name"
-       	PATCH_IF ("%npc_name%" STR_EQ "IMOEN") BEGIN
+       	PATCH_IF ("%npc_name%" STR_EQ "%IMOEN_DV%") BEGIN
        		SET_2DA_ENTRY "%cnt%" 9 "%cnt_col%" "1" // Garrick
        	END
     END
@@ -161,24 +166,24 @@ BUT_ONLY
 
 // Add Imoen to INTERACT.2DA
 COPY_EXISTING ~interact.2da~ ~override~
-	REPLACE_TEXTUALLY ~IMOEN~ ~_UNUSED~
+	REPLACE_TEXTUALLY ~%IMOEN_DV%~ ~_UNUSED~
 BUT_ONLY
 
 COPY_EXISTING ~interact.2da~ ~override~
 	COUNT_2DA_COLS "cnt_col"
 	COUNT_2DA_ROWS %cnt_col% "cnt_row"
-	SPRINT new_row ~IMOEN s 0 s 0 c s s c s s 0 i 0 s s 0 i i i i s 0 i 0~      
+	SPRINT new_row ~%IMOEN_DV% s 0 s 0 c s s c s s 0 i 0 s s 0 i i i i s 0 i 0~      
 	FOR ( cnt=25; cnt<"%cnt_col%"; cnt=cnt+1 ) BEGIN
     	SPRINT new_row ~%new_row% 0~
 	END
-	SPRINT new_col "$ $ IMOEN "
+	SPRINT new_col "$ $ %IMOEN_DV% "
 	SET cnt_row = %cnt_row% + 1
 	FOR ( cnt=0; cnt<"%cnt_row%"; cnt=cnt+1 ) BEGIN
     	SPRINT new_col ~%new_col% 0~
     END    
 BUT_ONLY
 
-APPEND "interact.2da" "%new_row%" UNLESS ~IMOEN~    
+APPEND "interact.2da" "%new_row%"  
 APPEND_COL "interact.2da" "%new_col%"
 
 COPY_EXISTING ~interact.2da~ ~override~
@@ -259,6 +264,22 @@ COPY_EXISTING ~interact.2da~ ~override~
         PATCH_IF ("%npc_name%" STR_EQ "VICONIA") BEGIN
         	SET_2DA_ENTRY "%cnt%" "%imoen_col%" "%cnt_col%" "0"
         END 	
+        PATCH_IF ("%npc_name%" STR_EQ "NEERA") BEGIN
+        	SET_2DA_ENTRY "%cnt%" "%imoen_col%" "%cnt_col%" "c"
+        END 	
+	END
+	// If Neera is added to INTERACT.2DA, flag her for compliments from Imoen
+	SET imoen_row = %cnt_row% - 1
+	SET neera_col = 0
+	SET idx_cols = %cnt_col%-1
+	FOR ( cnt=0; cnt<"%idx_cols%"; cnt=cnt+1 ) BEGIN
+		READ_2DA_ENTRY 0 "%cnt%" "%idx_cols%" "npc_name"
+        PATCH_IF ("%npc_name%" STR_EQ "NEERA") BEGIN
+        	SET neera_col = %cnt% + 1
+        END
+    END	
+	PATCH_IF (neera_col > 0) BEGIN
+		SET_2DA_ENTRY "%imoen_row%" "%neera_col%" "%cnt_col%" "c"
 	END
 BUT_ONLY
 
@@ -272,55 +293,39 @@ BUT_ONLY
 
 
 BEGIN @5 /* Give Imoen her BG1 Portrait */
-  SUBCOMPONENT @4  /* Imoen Portrait Replacements */
-  REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgee~ @1 /* You must have BG1, TotSC, Tutu, or BGEE installed. */
+	SUBCOMPONENT @4  /* Imoen Portrait Replacements */
+	REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee eet~ @1 /* You must have BG1, TotSC, Tutu, BGT, BGEE, or EET installed. */
 
-ACTION_FOR_EACH imoen IN imoen imoen1 imoen2 imoen4 imoen6 _imoen _imoen1 _imoen2 _imoen4 _imoen6 bdimoen bdimoedo BEGIN
-	ACTION_IF FILE_EXISTS_IN_GAME "%imoen%.cre" BEGIN
-		COPY_EXISTING ~%imoen%.CRE~ ~override~
-      		PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN // protects against invalid files
-        		WRITE_ASCIIE 0x34 ~imoen%sm%~ #8 // small portrait
-        		WRITE_ASCIIE 0x3c ~imoen%lg%~ #8 // large portrait
-        	END
-        BUT_ONLY
-    END
-END
+OUTER_SPRINT "imoen_port_sm" ~imoen%sm%~
+OUTER_SPRINT "imoen_port_lg" ~imoen%lg%~
+
+LAUNCH_ACTION_MACRO ~change_imoen_portrait~
+
 
 BEGIN @6 /* Give Imoen her SoD Portrait */
-  SUBCOMPONENT @4  /* Imoen Portrait Replacements */
-  REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgee~ @1 /* You must have BG1, TotSC, Tutu, or BGEE installed. */
+	SUBCOMPONENT @4  /* Imoen Portrait Replacements */
+	REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee eet~ @1 /* You must have BG1, TotSC, Tutu, BGT, BGEE, or EET installed. */
 
 ACTION_IF ( NOT FILE_EXISTS_IN_GAME ~bdimoenl.bmp~) THEN BEGIN
 	COPY ~chattyimoen/bmp/sod~ ~override~
 END
 
-ACTION_FOR_EACH imoen IN imoen imoen1 imoen2 imoen4 imoen6 _imoen _imoen1 _imoen2 _imoen4 _imoen6 bdimoen bdimoedo BEGIN
-	ACTION_IF FILE_EXISTS_IN_GAME "%imoen%.cre" BEGIN
-		COPY_EXISTING ~%imoen%.CRE~ ~override~
-      		PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN // protects against invalid files
-        		WRITE_ASCIIE 0x34 ~bdimoen%sm%~ #8 // small portrait
-        		WRITE_ASCIIE 0x3c ~bdimoen%lg%~ #8 // large portrait
-        	END
-        BUT_ONLY
-    END
-END
+OUTER_SPRINT "imoen_port_sm" ~bdimoen%sm%~
+OUTER_SPRINT "imoen_port_lg" ~bdimoen%lg%~
+
+LAUNCH_ACTION_MACRO ~change_imoen_portrait~
+
 
 BEGIN @7 /* Give Imoen her BG2 Portrait */
-  SUBCOMPONENT @4  /* Imoen Portrait Replacements */
-  REQUIRE_PREDICATE GAME_IS ~bgee~ @1 /* You must have Baldur's Gate: Enhanced Edition installed. */
+	SUBCOMPONENT @4  /* Imoen Portrait Replacements */
+	REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee eet~ @1 /* You must have BG1, TotSC, Tutu, BGT, BGEE, or EET installed. */
 
 ACTION_IF ( NOT FILE_EXISTS_IN_GAME ~nimoenl.bmp~) THEN BEGIN
 	COPY ~chattyimoen/bmp/bg2~ ~override~
 END
 
-ACTION_FOR_EACH imoen IN imoen imoen1 imoen2 imoen4 imoen6 _imoen _imoen1 _imoen2 _imoen4 _imoen6 bdimoen bdimoedo BEGIN
-	ACTION_IF FILE_EXISTS_IN_GAME "%imoen%.cre" BEGIN
-		COPY_EXISTING ~%imoen%.CRE~ ~override~
-      		PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN // protects against invalid files
-        		WRITE_ASCIIE 0x34 ~nimoen%sm%~ #8 // small portrait
-        		WRITE_ASCIIE 0x3c ~nimoen%lg%~ #8 // large portrait
-        	END
-        BUT_ONLY
-    END
-END
+OUTER_SPRINT "imoen_port_sm" ~nimoen%sm%~
+OUTER_SPRINT "imoen_port_lg" ~nimoen%lg%~
+
+LAUNCH_ACTION_MACRO ~change_imoen_portrait~
 
