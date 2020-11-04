@@ -4,3 +4,4 @@ package_mod.sh
 *.zip
 setup-chattyimoen
 setup-chattyimoen.exe
+.DS_Store
