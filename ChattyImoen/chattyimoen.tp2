@@ -12,7 +12,7 @@ AUTHOR ~AstroBryGuy~
 /* enable all error messages; nothing suppressed. comment this out for release version */
 // MODDER
 
-VERSION ~v1.4 (jastey's edit with Russian version by Austin)~
+VERSION ~1.5~
 
 README ~chattyimoen/readme.html~
 
@@ -85,7 +85,7 @@ LANGUAGE ~Russian~
 	~chattyimoen/tra/russian/setup.tra~
 	~chattyimoen/tra/russian/chattyimoen.tra~	
 	
-BEGIN @0 DESIGNATED 0 /* Chatty Imoen: Expanded Character Sounds */
+BEGIN @0 DESIGNATED 0 LABEL "AY-ChattyImoen-CharSnds" /* Chatty Imoen: Expanded Character Sounds */
   REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee eet~ @1 /* You must have BG1, TotSC, Tutu, BGT, BGEE, or EET installed. */
 
 ACTION_IF DIRECTORY_EXISTS ~chattyimoen/sounds/%LANGUAGE%~ THEN BEGIN
@@ -148,7 +148,7 @@ END
 COMPILE EVALUATE_BUFFER ~chattyimoen/dlg/ay#imoenp.d~
 
 
-BEGIN @2 /* Chatty Imoen:  Add NPC Interactions */
+BEGIN @2 DESIGNATED 10 LABEL "AY-ChattyImoen-NPCInteractions"/* Chatty Imoen:  Add NPC Interactions */
 	REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee eet~ @1 /* You must have BG1, TotSC, Tutu, BGT, BGEE, or EET installed. */
 	REQUIRE_COMPONENT ~setup-chattyimoen.tp2~ ~0~ @3 // ~Chatty Imoen: Expanded Character Sounds component required~
 
@@ -294,42 +294,3 @@ BUT_ONLY
 COPY_EXISTING ~interact.2da~ ~override~
 	LPM remove_blank_lines
 BUT_ONLY
-
-
-BEGIN @5 /* Give Imoen her BG1 Portrait */
-	SUBCOMPONENT @4  /* Imoen Portrait Replacements */
-	REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee eet~ @1 /* You must have BG1, TotSC, Tutu, BGT, BGEE, or EET installed. */
-
-OUTER_SPRINT "imoen_port_sm" ~imoen%sm%~
-OUTER_SPRINT "imoen_port_lg" ~imoen%lg%~
-
-LAUNCH_ACTION_MACRO ~change_imoen_portrait~
-
-
-BEGIN @6 /* Give Imoen her SoD Portrait */
-	SUBCOMPONENT @4  /* Imoen Portrait Replacements */
-	REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee eet~ @1 /* You must have BG1, TotSC, Tutu, BGT, BGEE, or EET installed. */
-
-ACTION_IF ( NOT FILE_EXISTS_IN_GAME ~bdimoenl.bmp~) THEN BEGIN
-	COPY ~chattyimoen/bmp/sod~ ~override~
-END
-
-OUTER_SPRINT "imoen_port_sm" ~bdimoen%sm%~
-OUTER_SPRINT "imoen_port_lg" ~bdimoen%lg%~
-
-LAUNCH_ACTION_MACRO ~change_imoen_portrait~
-
-
-BEGIN @7 /* Give Imoen her BG2 Portrait */
-	SUBCOMPONENT @4  /* Imoen Portrait Replacements */
-	REQUIRE_PREDICATE GAME_IS ~bg1 totsc tutu tutu_totsc bgt bgee eet~ @1 /* You must have BG1, TotSC, Tutu, BGT, BGEE, or EET installed. */
-
-ACTION_IF ( NOT FILE_EXISTS_IN_GAME ~nimoenl.bmp~) THEN BEGIN
-	COPY ~chattyimoen/bmp/bg2~ ~override~
-END
-
-OUTER_SPRINT "imoen_port_sm" ~nimoen%sm%~
-OUTER_SPRINT "imoen_port_lg" ~nimoen%lg%~
-
-LAUNCH_ACTION_MACRO ~change_imoen_portrait~
-
