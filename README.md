@@ -1,11 +1,11 @@
 # Chatty Imoen
 A Baldur's Gate mod by AstroBryGuy
 
-**Version 1.3**
+**Version 1.5**
 
 ## Introduction
 
-In the original Baldur's Gate, Imoen was a late addition to the game. Unfortunately, this means that she has no banter dialogs or interactions with other NPCs. Her voice set was also cobbled together. This mod expands Imoen's voice set and adds interaction banters with other NPCs. It also has a component to change Imoen's portrait to one of three choices: BG1, SoD, or BG2.
+In the original Baldur's Gate, Imoen was a late addition to the game. Unfortunately, this means that she has no banter dialogs or interactions with other NPCs. Her voice set was also cobbled together. This mod expands Imoen's voice set and adds interaction banters with other NPCs. 
 
 
 ## Compatibility
@@ -27,13 +27,9 @@ This component adds Imoen to the INTERACT.2DA file, which controls the "non-dial
 
 Also, this component gives Imoen a specific reaction to Garrick's death (no other NPC does).
 
-### Chatty Imoen: Imoen Portrait Replacements
+### Chatty Imoen: Imoen Portrait Replacements - REMOVED
 
-If you want Imoen to have a consistent portrait through BGEE and SoD, you can use this component to make all her character files use the same portrait. The options are:
-
-1. Give Imoen her BG1 Portrait
-2. Give Imoen her SoD Portrait
-3. Give Imoen her BG2 Portrait
+This component has been removed. Please see the [Continuous NPC Portrait Mod.](https://www.gibberlings3.net/files/file/1002-continuous-npc-portraits/)
 
 
 ## Installation
@@ -42,21 +38,34 @@ If you want Imoen to have a consistent portrait through BGEE and SoD, you can us
 
 Note: You will need to start a new game. The Imoen character files in any previously saved games will NOT be affected.
 
+### Project Infinity
+A Project Infinity package is available.
+
 ### Windows 
 If the mod was previously installed, uninstall it before extracting the new version. Chatty Imoen is packaged and installed with WeiDU. To install, extract the mod archive, then copy of the contents of the archive into your game folder (the folder which contains the chitin.key file). If properly extracted, you should have a "chattyimoen" folder and setup-chattyimoen.exe in your game folder. To install, simply double-click setup-chattyimoen.exe and follow the instructions on screen. 
 
 Please run setup-chattyimoen.exe in your game folder to reinstall, uninstall or otherwise change components. 
 
 ### Mac OS X 
-If the mod was previously installed, uninstall it before extracting the new version. Chatty Imoen is packaged and installed with WeiDU. To install, extract the mod archive, then copy of the contents of the folder "OSX-chattyimoen-v1" into your game folder (the folder which contains the chitin.key file). If properly extracted, you should have a "chattyimoen" folder, setup-chattyimoen, and setup-chattyimoen.command in your game folder. To install, simply double-click setup-chattyimoen.command and follow the instructions on screen. 
+If the mod was previously installed, uninstall it before extracting the new version. Chatty Imoen is packaged and installed with WeiDU. To install, extract the mod archive, then copy the contents into your game folder (the folder which contains the chitin.key file). If properly extracted, you should have a "chattyimoen" folder, setup-chattyimoen, and setup-chattyimoen.command in your game folder (you do not need the setup-chattyimoen.exe file, which is the installation file for Windows). To install, simply double-click setup-chattyimoen.command and follow the instructions on screen. 
 
 
 ## Contact Information
 
-Comments and bug reports can be directed to the Chatty Imoen thread in the [BGEE Mods forum at Beamdog](https://forums.beamdog.com/categories/bg%3Aee-mods).  If the thread is inaccessible, you can contact [AstroBryGuy](https://forums.beamdog.com/profile/AstroBryGuy) on the Beamdog forums.
+Comments and bug reports can be directed to the Chatty Imoen thread in the [BGEE Mods forum at Beamdog](https://forums.beamdog.com/discussion/51443/chatty-imoen).  If the thread is inaccessible, you can contact [AstroBryGuy](https://forums.beamdog.com/profile/AstroBryGuy) on the Beamdog forums.
 
 
 ## Version History
+
+Version 1.5 - September 10, 2022
+
+- Project Infinity format updates
+- Removed Imoen Portrait Replacements component
+
+Version 1.4 - March 30, 2021 (packed by jastey)
+
+-Added Russian translation
+-Fixing installation error on Tutu with TotSC (by Erg)
 
 Version 1.3 - May 6, 2017
 
